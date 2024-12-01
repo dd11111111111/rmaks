@@ -1,0 +1,36 @@
+/* 기본 스타일 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 텍스트 스타일 */
+.container {
+    text-align: center;
+}
+
+.shining-text {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    animation: shine 1.5s infinite;
+}
+
+/* 반짝이는 효과 */
+@keyframes shine {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+    }
+    50% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff;
+    }
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+    }
+}
